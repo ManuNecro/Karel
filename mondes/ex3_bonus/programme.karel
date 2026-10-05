@@ -1,0 +1,49 @@
+# Exercice 3 bonus : Le slalom
+definir tourner_droite:
+    repeter 3 fois:
+        tourner_gauche
+
+definir gauche:
+    tourner_gauche
+    avancer
+    tourner_droite
+    repeter 2 fois:
+        avancer
+
+tant que devant_libre:
+    repeter 2 fois :
+        avancer
+
+gauche
+tourner_droite
+
+tant que devant_libre:
+    repeter 2 fois :
+        avancer
+
+tourner_gauche
+
+tant que devant_libre:
+    repeter 4 fois :
+        avancer
+tourner_gauche
+
+tant que devant_libre:
+    repeter 2 fois :
+        avancer
+
+tourner_droite
+tant que devant_libre:
+    repeter 5 fois :
+        avancer
+tourner_droite
+tant que devant_libre:
+    repeter 2 fois :
+        avancer
+tourner_gauche
+tant que devant_libre:
+    repeter 2 fois :
+        avancer
+tourner_gauche
+avancer 
+ramasser_balise
