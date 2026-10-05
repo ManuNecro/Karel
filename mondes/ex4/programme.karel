@@ -1,4 +1,5 @@
 # Exercice 4 : monter l’escalier avec repeter
+<<<<<<< HEAD
 definir tourner_droite:
     tourner_gauche
     tourner_gauche
@@ -9,3 +10,5 @@ repeter 3 fois:
     avancer
     tourner_droite
 ramasser_balise
+=======
+>>>>>>> parent of b2bf99d ([4] La version qui fonctionne)
