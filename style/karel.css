@@ -11,10 +11,10 @@
   --mut:  #5d6b78;  /* texte secondaire */
   --card: #ffffff;  /* fond des zones (éditeurs, canvas) */
   --bd:   #cfd6dd;  /* bordures */
-  --acc:  #0b6bcb;  /* couleur d'accent (Karel, bouton principal) */
+  --acc:  #ff0000;  /* couleur d'accent (Karel, bouton principal) */
   --wall: #2b3742;  /* murs */
   --grid: #dde3e8;  /* lignes de la grille */
-  --bp:   #e8a200;  /* balises */
+  --bp:   #23e800;  /* balises */
   --ok:   #12724a;
   --ko:   #b3261e;  /* erreurs */
 }
@@ -27,10 +27,10 @@
     --mut:  #93a1ae;
     --card: #18212a;
     --bd:   #33414e;
-    --acc:  #6db1ff;
+    --acc:  #ff0000;
     --wall: #8a9aa8;
     --grid: #26313b;
-    --bp:   #f2b632;
+    --bp:   #32f235;
     --ok:   #4cc38a;
     --ko:   #ff8a80;
   }
