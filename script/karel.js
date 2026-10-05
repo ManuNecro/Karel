@@ -38,8 +38,17 @@ const here=s=>s.k.y*s.w+s.k.x;
 const ACTIONS={
   avancer(s){if(!look(s,0))throw new Error('Karel ne peut pas avancer : obstacle devant lui');const [dx,dy]=DIRS[s.k.d];s.k.x+=dx;s.k.y+=dy},
   tourner_gauche(s){s.k.d=(s.k.d+3)%4},
+  sauter(s){
+    const [dx,dy]=DIRS[s.k.d];
+    // Vérifie si la case située à 2 pas est libre (traverse le mur ou l'obstacle de la 1ère case)
+    if(!free(s, s.k.x + dx * 2, s.k.y + dy * 2)) throw new Error('Karel ne peut pas sauter : atterrissage impossible');
+    s.k.x += dx * 2;
+    s.k.y += dy * 2;
+  },
   poser_balise(s){if(s.bag<=0)throw new Error('le sac de Karel est vide');s.bag--;s.b[here(s)]++},
-  ramasser_balise(s){if(!s.b[here(s)])throw new Error("il n'y a pas de balise ici");s.b[here(s)]--;s.bag++}
+  ramasser_balise(s){if(!s.b[here(s)])throw new Error("il n'y a pas de balise ici");s.b[here(s)]--;s.bag++},
+  reculer(s){if(!look(s,2))throw new Error('Karel ne peut pas reculer : obstacle derrière lui');const [dx,dy]=DIRS[(s.k.d+2)%4];s.k.x+=dx;s.k.y+=dy}
+  
 };
 const CONDS={
   devant_libre:s=>look(s,0),devant_bloque:s=>!look(s,0),
