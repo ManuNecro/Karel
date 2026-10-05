@@ -1,0 +1,31 @@
+# Exercice 2 bonus : Un S en balises
+definir quatres :
+    poser_balise
+    avancer
+    poser_balise
+    avancer
+    poser_balise
+    avancer
+    poser_balise
+    avancer
+    poser_balise
+
+definir tourner_droite :
+    tourner_gauche
+    tourner_gauche
+    tourner_gauche
+definir deux :
+    avancer
+    poser_balise
+    avancer
+
+quatres
+tourner_gauche
+deux
+tourner_gauche
+quatres
+tourner_droite
+deux
+tourner_droite
+quatres
+
