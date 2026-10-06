@@ -1,1 +1,14 @@
 # Exercice 5 : aller chercher le journal et rentrer, face à l’est
+definir turn:
+    repeter 2 fois:
+        tourner_gauche
+
+tant que pas balise_ici:
+    avancer
+
+turn
+ramasser_balise
+repeter 4 fois:
+    avancer
+turn
+
