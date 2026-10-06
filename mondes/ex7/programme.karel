@@ -1,8 +1,22 @@
-# Projet : Karel le jardinier
-definir sac :
+definir tourner_droite: 
+    repeter 3 fois:
+        tourner_gauche
+
+definir turn:
+    repeter 3 fois:
+        tourner_gauche
+  
+  
+definir coin:
+    tant que pas regarde_sud:
+        tourner_gauche
     tant que devant_libre:
         avancer
-        si balise_ici:
-            ramasser_balise
+    tourner_droite 
+    tant que devant_libre:
+        avancer
 
-sac
+coin
+turn
+
+    
