@@ -1,1 +1,8 @@
 # Projet : Karel le jardinier
+definir sac :
+    tant que devant_libre:
+        avancer
+        si balise_ici:
+            ramasser_balise
+
+sac
